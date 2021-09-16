@@ -1,0 +1,6 @@
+#page-home {
+  height: 100vh;
+
+  background: url('../assets/bg-home.svg') no-repeat;
+  background-position: 35vw bottom;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criar um ponto de coleta</title>
+
+  <link rel="stylesheet" href="/public/styles/main.css">
+  <link rel="stylesheet" href="/public/styles/create-point.css">
+  <link rel="stylesheet" href="/public/style/responsive.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="page-create-point">
+    <header>
+      <img src="/public/assets/logo.svg" alt="Logomarca">
+      <a href="#">
+        <span></span>
+        Voltar para home
+      </a>
+    </header>
+
+    <form action="">
+      <h1>Cadastro do ponto de coleta</h1>
+
+      <fieldset>
+        <legend>
+          <h2>Dados da entidade</h2>
+        </legend>
+
+        <div class="field">
+          <label for="name">Nome da entidade</label>
+          <input type="text" name="name">
+        </div>
+
+        <div class="field-group">
+          <div class="field-group">
+            <label for="address">Endereço</label>
+            <input type="text" name="address">
+          </div>
+          <div class="field">
+            <label for="address2">Número/Complemento</label>
+            <input type="text" name="address2">
+          </div>
+        </div>
+
+        <div class="field-group">
+          <div class="field">
+            <label for="city">Cidade</label>
+            <select name="city">
+              <option value="">Selecione a cidade</option>
+            </select>
+          </div>
+        </div>
+        <div class="field-group">
+          <div class="field">
+            <label for="district">Cidade</label>
+            <select name="district" disabled>
+              <option value="">Selecione o bairro</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+
+      <button type="submit">Cadastrar ponto de coleta</button>
+    </form>
+  </div>
+</body>
+</html>

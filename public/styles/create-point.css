@@ -68,7 +68,6 @@ form input, form select {
   padding: 1rem 1.5rem;
   font-size: 1rem;
   border-radius: 0.5rem;
-  outline: none;
 }
 
 form select {
@@ -96,8 +95,45 @@ form button {
   margin-top: 2.5rem;
   background-color: var(--primary-color);
   transition: background-color 400ms;
+  cursor: pointer;
 }
 
 form button:hover {
   background-color: #2fb86e;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.items-grid li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  list-style: none;
+  cursor: pointer;
+
+  height: 11.25rem;
+  padding: 2rem 1.5rem 1rem;
+  border: 2px solid #f5f5f5;
+  border-radius: 0.5rem;
+  
+  background-color: #f5f5f5;
+}
+
+.items-grid li span {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  color: var(--title-color);
+  margin-top: 0.75rem;
+}
+
+.items-grid li.selected {
+  background: #e1faec;
+  border: 2px solid #34cb79;
 }

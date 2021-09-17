@@ -36,7 +36,7 @@
         </div>
 
         <div class="field-group">
-          <div class="field-group">
+          <div class="field">
             <label for="address">Endereço</label>
             <input type="text" name="address">
           </div>
@@ -48,20 +48,56 @@
 
         <div class="field-group">
           <div class="field">
-            <label for="city">Cidade</label>
-            <select name="city">
-              <option value="">Selecione a cidade</option>
+            <label for="state">Estado</label>
+            <select name="uf">
+              <option value="">Selecione o estado</option>
             </select>
+
+            <input type="hidden" name="state">
           </div>
         </div>
         <div class="field-group">
           <div class="field">
-            <label for="district">Cidade</label>
-            <select name="district" disabled>
-              <option value="">Selecione o bairro</option>
+            <label for="city">Cidade</label>
+            <select name="city" disabled>
+              <option value="">Selecione a cidade</option>
             </select>
           </div>
         </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>
+          <h2>ítens de coletas</h2>
+        </legend>
+
+        <div class="items-grid">
+          <li data-id="1" class="selected">
+            <img src="/public/assets/lamp.svg" alt="Lâmpadas"/>
+            <span>Lâmpadas</span>
+          </li>
+          <li data-id="2">
+            <img src="/public/assets/bateri.svg" alt="Pilhas e Baterias"/>
+            <span>Pilhas e Baterias</span>
+          </li>
+          <li data-id="3">
+            <img src="/public/assets/papes.svg" alt="Papéis e Papelão"/>
+            <span>Papéis e Papelão</span>
+          </li>
+          <li data-id="4">
+            <img src="/public/assets/eletric.svg" alt="Eletrônicos"/>
+            <span>Resíduos Eletrônicos</span>
+          </li>
+          <li data-id="5">
+            <img src="/public/assets/organic.svg" alt="Orgânicos"/>
+            <span>Resíduos Orgânicos</span>
+          </li>
+          <li data-id="6">
+            <img src="/public/assets/oleo.svg" alt="Oléo de Cozinha"/>
+            <span>Óleo de Cozinha</span>
+          </li>
+        </div>
+
       </fieldset>
 
       <button type="submit">Cadastrar ponto de coleta</button>

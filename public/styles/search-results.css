@@ -1,0 +1,78 @@
+body::after {
+  position: fixed;
+  content: "";
+  top: 260px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  background: #fff;
+}
+
+#page-search-results header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+#page-search-results header a {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: var(--title-color);
+}
+
+#page-search-results header a span {
+  display: flex;
+  width: 1.25rem;
+  height: 1.5rem;
+  margin-right: 1rem;
+  background-image: url('../assets/arrow-back.svg');
+}
+
+main {
+  margin: 3rem;
+}
+
+main h4 {
+  font-weight: normal;
+  font-family: Roboto, sans-serif;
+  margin-bottom: 2rem;
+}
+
+main .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+main .card img {
+  width: 100%;
+  height: 150px;
+  border-radius: 8px 8px 0 0;
+  object-fit: cover;
+}
+
+
+main .card h1 {
+  font-size: 36px;
+  line-height: 41px;
+  margin-top: 32px;
+  color: #322153;
+}
+
+main .card h3 {
+  font-family: Roboto;
+  font-weight: bold;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  line-height: 34px;
+  margin: 1.5rem 0;
+}
+
+main .card p {
+  font-size: 1rem;
+  line-height: 26px;
+  color: #6C6C80;
+}

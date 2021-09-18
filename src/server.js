@@ -11,7 +11,7 @@ server.use(express.static("public"))
 server.use(express.urlencoded({ extended: true }))
 
 //template engine
-const nunjucks = require('nunjucks')
+const nunjucks = require("nunjucks")
 nunjucks.configure("src/views", {
   express: server,
   noCache: true
@@ -22,8 +22,8 @@ server.get('/', (req, res) => {
   return res.render("index.html", {title: 'Um title'})
 })
 
-server.get('/create-point.html', (req, res) => {
-  return res.render('create-point.html')
+server.get("/create-point", (req, res) => {
+  return res.render("create-point.html")
 })
 
 server.post("/savepoint", (req, res) => {

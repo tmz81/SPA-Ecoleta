@@ -1,4 +1,4 @@
-@media (max-width: 56.25rem) {
+@media (max-width: 900px) {
   #page-home {
     background-position-x: 70vw;
   }
@@ -36,14 +36,14 @@
   }
 }
 
-@media (min-width: 106.25rem) {
+@media (min-width: 1700px) {
   #page-home {
     background-position-x: 40vw;
   }
 }
 
-@media (max-height: 47.5rem) {
+@media (max-height: 760px) {
   #page-home {
-    background-position-y: 12.5rem;
+    background-position-y: 200px;
   }
 }

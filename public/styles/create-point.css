@@ -1,6 +1,6 @@
 #page-create-point {
   width: 90%;
-  max-width: 68.75rem;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -14,14 +14,14 @@
 #page-create-point header a {
   display: flex;
   align-items: center;
-  color: var(--title-color);
   font-weight: bold;
+  color: var(--title-color);
 }
 
 #page-create-point header a span {
   display: flex;
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 20px;
+  height: 20px;
   margin-right: 1rem;
   background-image: url('../assets/arrow-back.svg');
 }
@@ -30,12 +30,12 @@ form {
   background-color: #fff;
   padding: 4rem;
   margin: 5rem auto;
-  border-radius: 0.5rem;
-  max-width: 45.625rem;
+  border-radius: 8px;
+  max-width: 730px;
 }
 
 form h1 {
-  font-size: 2.25rem;
+  font-size: 36px;
 }
 
 form fieldset {
@@ -48,11 +48,11 @@ form legend {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-bottom: 2.5rem;
+  margin-bottom: 40px;
 }
 
 form legend h2 {
-  font-size: 1.5rem;
+  font-size: 24px;
 }
 
 form legend span {
@@ -64,7 +64,7 @@ form .field {
   display: flex;
   flex-direction: column;
   flex: 1;
-  margin-bottom: 1.5rem;
+  margin-bottom: 24px;
 }
 
 form .field-group {
@@ -74,9 +74,9 @@ form .field-group {
 form input, form select {
   background-color: #f0f0f5;
   border: 0;
-  padding: 1rem 1.5rem;
+  padding: 1rem 24px;
   font-size: 1rem;
-  border-radius: 0.5rem;
+  border-radius: 8px;
 }
 
 form select {
@@ -85,23 +85,23 @@ form select {
 }
 
 form label {
-  font-size: 0.875rem;
-  margin-bottom: 0.5rem;
+  font-size: 14px;
+  margin-bottom: 8px;
 }
 
 form .field-group .field + .field {
-  margin-left: 1.5rem;
+  margin-left: 24px;
 }
 
 form button {
-  width: 16.25rem;
-  height: 3.5rem;
+  width: 260px;
+  height: 56px;
   color: #fff;
   font-size: 1rem;
   font-weight: bold;
   border: 0;
-  border-radius: 0.5rem;
-  margin-top: 2.5rem;
+  border-radius: 8px;
+  margin-top: 40px;
   background-color: var(--primary-color);
   transition: background-color 400ms;
   cursor: pointer;
@@ -126,10 +126,10 @@ form button:hover {
   list-style: none;
   cursor: pointer;
 
-  height: 11.25rem;
-  padding: 2rem 1.5rem 1rem;
+  height: 180px;
+  padding: 2rem 24px 1rem;
   border: 2px solid #f5f5f5;
-  border-radius: 0.5rem;
+  border-radius: 8px;
   
   background-color: #f5f5f5;
 }
@@ -139,7 +139,7 @@ form button:hover {
   flex: 1;
   align-items: center;
   color: var(--title-color);
-  margin-top: 0.75rem;
+  margin-top: 12px;
 }
 
 .items-grid li.selected {

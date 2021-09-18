@@ -13,7 +13,7 @@ function populateUFs() {
 populateUFs()
 
 //get city
-function getCity(event) {
+function getCities(event) {
   const citySelect = document.querySelector('[name=city]')
   const stateInput = document.querySelector('[name=state]')
   const ufValue = event.target.value
@@ -21,6 +21,9 @@ function getCity(event) {
   stateInput.value = event.target.options[indexState].text
 
   const url = `https://servicodados.ibge.gov.br/api/v1/localidades/estados/${ufValue}/municipios`
+
+  citySelect.innerHTML = '<option values>Selecione a Cidade</option>'
+  citySelect.disabled = true
 
   fetch(url)
   .then(res => res.json())
@@ -35,30 +38,35 @@ function getCity(event) {
 
 document
   .querySelector('select[name=uf]')
-  .addEventListener('change', getCity)
+  .addEventListener('change', getCities)
 
 //get all li
 const itemsCollect = document.querySelector('.items-grid li')
-const itemsOfCollected = document.querySelector('input[name=items]')
-let selectItems = []
 
 for(const item of itemsCollect) {
-  item.addEventListener('click', handleSelectItem)
+  item.addEventListener('click', handleSelectedItem)
 }
 
-function handlerSelectedItem(event) {
-  //add class
-  const itemLi = event.target
-  const itemId = itemLi.dataset.id
 
+const itemsOfCollected = document.querySelector('input[name=items]')
+
+let selectedItems = []
+
+function handlerSelectedItem(event) {
+  const itemLi = event.target
 
   itemLi.classList.toggle('selected')
 
-  //verify exist selected items, our yes? 
-  //Ok, get selected item
+  const itemId = itemLi.dataset.id
+
+  const alreadySelected = selectedIItems.findIndex(item => {
+    const itemFound = item == itemId
+    return itemFound
+  })
+
   if(alreadySelected >= 0) {
     const filteredItems = selectedItems.find(item => {
-      const itemIsDifferent = item != itemId //false
+      const itemIsDifferent = item != itemId
       return itemIsDifferent
     })
 

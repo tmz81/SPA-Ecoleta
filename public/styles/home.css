@@ -6,12 +6,12 @@
 }
 
 #page-home .content {
-  width: 90%;
-  height: 100%;
-  max-width: 1100px;
   display: flex;
   flex-direction: column;
+  width: 90%;
+  height: 100%;
   margin: 0 auto;
+  max-width: 1100px;
 }
 
 #page-home header {
@@ -21,7 +21,7 @@
   margin-top: 48px;
 }
 
-#page-home header {
+#page-home header a{
   display: flex;
   color: var(--title-color);
   font-weight: 700;

@@ -114,7 +114,7 @@ form button:hover {
 .items-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
+  gap: 16px;
 }
 
 .items-grid li {
@@ -127,7 +127,8 @@ form button:hover {
   cursor: pointer;
 
   height: 180px;
-  padding: 2rem 24px 1rem;
+  width: 180px;
+  padding: 32px 24px 16px;
   border: 2px solid #f5f5f5;
   border-radius: 8px;
   
@@ -135,11 +136,11 @@ form button:hover {
 }
 
 .items-grid li span {
-  display: flex;
+  margin-top: 12px;
   flex: 1;
+  display: flex;
   align-items: center;
   color: var(--title-color);
-  margin-top: 12px;
 }
 
 .items-grid li.selected {
@@ -147,6 +148,7 @@ form button:hover {
   border: 2px solid #34cb79;
 }
 
-.items-grid li img, .items-grid li span {
+.items-grid li img,
+.items-grid li span {
   pointer-events: none;
 }

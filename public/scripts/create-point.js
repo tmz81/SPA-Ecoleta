@@ -44,7 +44,7 @@ document
 const itemsCollect = document.querySelector('.items-grid li')
 
 for(const item of itemsCollect) {
-  item.addEventListener('click', handleSelectedItem)
+  item.addEventListener('click', handlerSelectedItem)
 }
 
 

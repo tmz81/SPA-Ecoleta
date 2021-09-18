@@ -1,11 +1,11 @@
-{%  extends 'layout.html'  %}
+{% extends "layout.html" %}
 
-{%  set pageId = 'page-home'  %}
+{% set pageId = "page-home" %}
 
-{%  block styles  %}
+{% block styles %}
   <link rel="stylesheet" href="/styles/home.css">
   <link rel="stylesheet" href="/styles/modal.css">
-{%  endblock styles  %}  
+{% endblock styles %}  
   
 
 {%  block content  %}
@@ -21,18 +21,18 @@
       <main>
         <h1>Seu marketplace de coleta de resíduos.</h1>
         <p>Ajudamos pessoas a encontrarem pontos de coleta de forma eficiente</p>
-        <a href="#">
+        <a href="/search">
           <span></span>
           <strong>Pesquisar pontos de coleta</strong>
         </a>
       </main>
     </div>
-{%  endblock content  %}
+{% endblock content %}
 
-{%  block modal  %}  
-  {%  include 'partials/modal.html'  %}  
-{%  endblock modal  %}  
+{% block modal %}  
+  {% include "partials/modal.html" %}  
+{% endblock modal %}  
 
-{%  block scripts  %}  
+{% block scripts %}  
     <scripts src="/scripts/index.js"></scripts>
-{%  endblock scripts  %}
+{% endblock scripts %}

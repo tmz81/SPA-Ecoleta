@@ -1,13 +1,13 @@
 //import dependence from sqlite3
-const sqlite3 = require('sqlite3').verbose()
+const sqlite3 = require("sqlite3").verbose()
 //create the object that will do database operations
-const db = new sqlite3.Database('./src/db/database.db')
+const db = new sqlite3.Database("./src/db/database.db")
 
 module.exports = db
 
 db.serialize(() => {
   //create table
-  db.run(`
+  /* db.run(`
     CREATE TABLE IF NOT EXISTS places (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       image TEXT,
@@ -72,5 +72,5 @@ db.serialize(() => {
     }
 
     console.log('Registro deletado com sucesso!');
-  })
+  }) */
 })

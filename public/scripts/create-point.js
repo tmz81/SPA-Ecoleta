@@ -41,7 +41,7 @@ document
   .addEventListener('change', getCities)
 
 //get all li
-const itemsCollect = document.querySelector('.items-grid li')
+const itemsCollect = document.querySelectorAll('.items-grid li')
 
 for(const item of itemsCollect) {
   item.addEventListener('click', handlerSelectedItem)
